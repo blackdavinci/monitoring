@@ -62,7 +62,21 @@ class ScoreController extends Controller
                                         'score_end'=>$data['score_end'][$i]
                                         ]);
         }
-        
+        $scores = Score::get();
+        foreach ($scores as $key => $value) {
+            $score_max[$key] = $value->score_end;
+        }
+        $pt_max = max($score_max);
+
+        $rendements = Rendement::get();
+       $row = count($rendements);
+        foreach ($rendements as $key => $value) {
+            if($value->an==$request->input('an')){
+                 $value->update(['pt_max'=>$pt_max]);
+            }
+            var_dump($value);
+            dd();
+        }
         return redirect(route('score.index'));
     }
 

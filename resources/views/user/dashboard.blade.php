@@ -35,7 +35,7 @@
 					    <div class="panel-heading" role="tab" id="heading{{$user->id}}">
 					      <h4 class="panel-title">
 					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$user->id}}" aria-expanded="true" aria-controls="collapseOne">
-					          <strong>{{$user->nom.' '.$user->prenom}}</strong><span class="badge pull-right">4</span>
+					          <strong>{{$user->nom.' '.$user->prenom}}</strong><span class="badge pull-right"></span>
 					        </a>
 					      </h4>
 					    </div>
@@ -54,6 +54,25 @@
 					      					</tr>
 					      				</thead>
 					      				<tbody>
+					      					<td></td>
+					      					<td></td>
+					      					<td></td>
+					      					<td>
+					      						@foreach($user->rendements as $rendement)
+					      							<h4>
+					      								<span class="label label-info">
+					      								{{$rendement->moyenne}} / {{$rendement->pt_max}}
+					      								
+					      									{{$rendement->score->designation}}
+					      								</span>
+					      							</h4>
+					      						@endforeach
+					      					</td>
+					      					<td>
+					      						@foreach($user->rendements as $rendement)
+					      							<h4>{{$rendement->an}}</h4>
+					      						@endforeach
+					      					</td>
 					      				</tbody>
 					      			</table>
 					      		</div>

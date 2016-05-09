@@ -11,7 +11,7 @@ class Rendement extends Model
      *
      * @var array
      */
-    protected $fillable = ['moyenne','id_user','score_id','an'];
+    protected $fillable = ['moyenne','user_id','score_id','an','pt_max'];
 
     public function user(){
 

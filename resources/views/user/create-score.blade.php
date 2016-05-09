@@ -26,6 +26,11 @@
 			
 			<form action="{{route('score.store')}}" method="POST" class="form-horizontal"  novalidate>
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
+				{{--*/ 
+					$dt = new DateTime('');
+					$an =  $dt->format('Y');
+				/*--}}
+				<input type="hidden" name="an" value="{{$an}}">
 			  <div class="form-group" ng-controller="MainCtrl as main">
 			    <label for="prenom" class="col-sm-2 control-label">Appréciation(s)</label>
 			   
