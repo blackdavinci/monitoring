@@ -1,0 +1,128 @@
+/*********** STYLE GLOBAL **********/
+#page-wrapper{
+	padding-bottom: 30px;
+}
+.title-Upper{
+	text-transform: uppercase;
+}
+.top-menu-content{
+	margin-bottom: 20px;
+	padding:10px;
+}
+.head-menu{
+	padding-left:15px;
+}
+.head-menu>li{
+	display:inline-block;
+	margin-left:4px;
+	list-style: none;
+}
+.table-noborder>tbody>tr>td{
+	border-top:0;
+}
+.info-head-title{
+	font-size:15px;
+	font-weight: bold;
+}
+.title-data{
+	font-size: 14px;
+}
+.info-data{
+	font-size:15px;
+	font-weight: bold;
+}
+.label-note{
+	font-size:15px;
+}
+.title-bottom-border{
+	border-bottom: 1px solid #e7e7e7;
+}
+#log-form-container{
+	margin-top:40px;
+}
+.content-row-padding{
+	padding-left:30px;
+	padding-right:30px;
+}
+.show-element{
+	display:visible;
+}
+.btn-form{
+	float:left;
+	margin-right:4px;
+}
+/*Padding-Off*/
+.padding-left-off{
+	padding-left: 0px;
+}
+.padding-right-off{
+	padding-right: 0px;
+}
+.padding-bottom-off{
+	padding-bottom: 0px;
+}
+.padding-top-off{
+	padding-top: 0px;
+}
+/*Maring-Off*/
+.margin-left-off{
+	margin-left: 0px;
+}
+.margin-right-off{
+	margin-right: 0px;
+}
+.margin-bottom-off{
+	margin-bottom: 0px;
+}
+.margin-top-off{
+	margin-top: 0px;
+}
+/*********** STYLE UTILISATEURS **********/
+#table-user-list>tbody>tr>.info-table{
+	padding-top:10px;
+}
+.info-table a:hover{
+	text-decoration: none;
+}
+.btn-action{
+	display: none;
+}
+#table-user-list tr:hover .btn-action{
+	display: block;
+}
+.btn-action-menu-right ul li{
+	float:right;
+	margin:4px;
+}
+.btn-action-menu-left{
+	padding-left:0px;
+	padding-right:0px;
+}
+.btn-action-menu-left ul li{
+	float:left;
+	margin:4px;
+}
+
+.line-year{
+	margin-top:15px;
+	margin-bottom:15px;
+	background-color: #e7e7e7;
+	padding:10px;
+}
+
+.line-year span{
+	font-size:20px;
+	font-weight: bold;
+}
+.line-year a{
+	text-decoration: none;
+}
+/*********** STYLE OBJECTIF **********/
+.date-info{
+	color:gray;
+}
+
+.objectif-data .date-info{
+	position:relative;
+	top:-8px;
+}
